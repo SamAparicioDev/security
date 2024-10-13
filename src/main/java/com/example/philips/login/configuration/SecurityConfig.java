@@ -40,6 +40,7 @@ public class SecurityConfig {
                                 .requestMatchers("/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html", "/h2-console/**").permitAll()
                                 .requestMatchers("/api/auth/login", "/index.html").permitAll()
                                 .requestMatchers("/api/auth/register").permitAll()
+                                .requestMatchers("/api/auth/login").permitAll()
                 )
                 .formLogin(AbstractHttpConfigurer::disable)
                 .httpBasic(AbstractHttpConfigurer::disable)

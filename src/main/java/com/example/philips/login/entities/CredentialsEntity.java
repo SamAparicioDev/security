@@ -19,6 +19,7 @@ public class CredentialsEntity {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     @Setter
+    @Column(unique = true)
     private String username;
     @Setter
     private String password;
