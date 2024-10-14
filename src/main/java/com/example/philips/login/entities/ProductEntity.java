@@ -26,11 +26,11 @@ public class ProductEntity {
     @Setter
     private String imagenUrl;
 
-    public ProductEntity(String name, String imagenUrl,  Float price, Long stock, String description) {
+    public ProductEntity(String name, String description,  Float price, Long stock, String imagenUrl) {
         this.name = name;
-        this.imagenUrl = imagenUrl;
+        this.description = description;
         this.price = price;
         this.stock = stock;
-        this.description = description;
+        this.imagenUrl = imagenUrl;
     }
 }
